@@ -1,0 +1,287 @@
+{% extends './layouts/default.html' %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block content %}
+
+<!-- Preloader --> 
+    <div id="preloader">
+      <div class="loader"></div>    
+    </div><!--preloader end-->
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="m-nav">
+         <a class="mobile-btn" href="#m-nav" title="Show navigation">Show navigation</a>
+	     <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">{{__('Home')}}</a></li>
+            <li><a class="smoothscroll" href="#about">{{__('About me')}}</a></li>
+            <li><a class="smoothscroll" href="#portfolio">{{__('Portfolio')}}</a></li>
+			<li><a class="smoothscroll" href="http://blog.rectius.com.br">{{__('Blog')}}</a></li>
+			<li><a class="smoothscroll" href="http://blog.rectius.com.br">{{__('Blog')}}</a></li>
+			<li><a href="/pt-br"><img class="flag" src="/images/br.svg" /></a></li>
+			<li><a href="/en"><img class="flag" src="/images/us.svg" /></a></li>
+         </ul> <!-- end #nav -->
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            {{__('Greeting')}}
+            <hr />
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="fa fa-angle-double-down"></i></a>
+      </p>
+
+      <div class="header-overlay"></div>
+
+   <!-- Social Section
+   ================================================== -->
+      <div id="social">
+        <div class="row social-container">
+              <ul class="social">               
+		  	     <li><a href="https://github.com/rectius"><i class="fa fa-github"></i></a></li>               
+		  	     <li><a href="https://br.linkedin.com/in/pablosouzasantos"><i class="fa fa-linkedin"></i></a></li>               
+		  	     <li><a href="http://blog.rectius.com.br"><i class="fa fa-wordpress"></i></a></li>			   
+              </ul>
+        </div>
+      </div> <!-- Social End -->
+
+   </header> <!-- Header End -->
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+      <div class="row bio-container">
+        <div class="twelve columns bio-inner">
+         <div class="six columns bio-left"> 
+          <div class="pp-container">
+
+            <img class="profile-pic wow zoomIn"  src="/images/profile.jpg" alt="" />
+              <h2>Pablo Souza</h2>
+              <h3>Software Engineer</h3>              
+          </div>
+         </div>
+         <div class="six columns main-col wow fadeIn">
+          <div class="arrow-left"></div>
+			{{__('About me block')}}
+          <div class="row">            
+            <div class="six columns download">
+                <p>
+                  <a href="#contact" class="button"><i class="fa fa-paper-plane"></i>{{__('Hire me')}}</a>
+                  <a href="{{path.resume}}" class="button" target="_blank"><i class="fa fa-download"></i>{{__('Download resume')}}</a>
+                </p>
+            </div> <!-- Download Buttons --> 
+          </div>
+         </div> <!-- end .main-col -->
+        </div>
+      </div>
+   </section> <!-- About Section End-->
+
+
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1 class="section-title wow fadeInDown">{{__('Recent works')}}</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf wow fadeIn">
+
+          	   <div class="columns portfolio-item">
+					<div class="item-wrap">
+						<a href="#modal-01" title="">
+							<img alt="" src="/images/photo-portal-sorocred.jpg">
+							<div class="overlay">
+							   <div class="portfolio-item-meta">
+									<h5>Sorocred</h5>
+									<p>Financial services</p>
+								</div>
+							</div>
+							<div class="link-icon"><i class="fa fa-plus fa-2x"></i></div>
+						</a>
+					</div>
+          		</div>
+				
+				<div class="columns portfolio-item">
+                  <div class="item-wrap">
+                     <a href="#modal-02" title="">
+                        <img alt="" src="/images/photo-sendia.jpg">
+						<div class="overlay">
+						   <div class="portfolio-item-meta">
+								<h5>Sendia</h5>
+								<p>Text Message API</p>
+							</div>
+						</div>
+						<div class="link-icon"><i class="fa fa-plus fa-2x"></i></div>
+                     </a>
+                  </div>
+          		</div>
+				
+				<div class="columns portfolio-item">
+                  <div class="item-wrap">
+                     <a href="#modal-03" title="">
+                        <img alt="" src="/images/photo-desafio-votorantim.jpg">
+						<div class="overlay">
+						   <div class="portfolio-item-meta">
+								<h5>Votorantim Institute</h5>
+								<p>Volunteers' Challenge 2016</p>
+							</div>
+						</div>
+						<div class="link-icon"><i class="fa fa-plus fa-2x"></i></div>
+                     </a>
+                  </div>
+          		</div>
+				
+				<div class="columns portfolio-item">
+                  <div class="item-wrap">
+                     <a href="#modal-04" title="">
+                        <img alt="" src="/images/photo-20ht.jpg">
+						<div class="overlay">
+						   <div class="portfolio-item-meta">
+								<h5>20hT</h5>
+								<p>Courses for your IT career</p>
+							</div>
+						</div>
+						<div class="link-icon"><i class="fa fa-plus fa-2x"></i></div>
+                     </a>
+                  </div>
+          		</div>
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+                     <a href="#modal-05" title="">
+                        <img alt="" src="/images/photo-firstidiomas.png">
+						<div class="overlay">
+						   <div class="portfolio-item-meta">
+								<h5>First Idiomas</h5>
+								<p>Online Services</p>
+							</div>
+						</div>
+						<div class="link-icon"><i class="fa fa-plus fa-2x"></i></div>
+                     </a>
+                  </div>
+          		</div>
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+                     <a href="#modal-06" title="">
+                        <img alt="" src="/images/photo-redsocial.png">
+						<div class="overlay">
+						   <div class="portfolio-item-meta">
+								<h5>Redsocial</h5>
+								<p>Track your social media activities</p>
+							</div>
+						</div>
+						<div class="link-icon"><i class="fa fa-plus fa-2x"></i></div>
+                     </a>
+                  </div>
+          		</div>
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+         <!-- Modal Popup
+	      =============================================== -->
+
+         <div id="modal-01" class="popup-modal mfp-hide">		    
+		    <div class="description-box">
+			    <h4>Sorocred - Financial Services</h4>
+			    <p>Sorocred is a financial company that provides through its Portal, online services to their customers.</p>
+                <span class="categories"><i class="fa fa-tag"></i>Microservices, NodeJS, ASP.NET MVC/WEB API, Oracle, DynamoDB, Amazon AWS</span>
+		    </div>
+            <div class="link-box">
+		        <a class="popup-modal-dismiss button btn-close">Close</a>
+            </div>
+	      </div>
+		  
+		  <div id="modal-02" class="popup-modal mfp-hide">		    
+		    <div class="description-box">
+			    <h4>Sendia - Text Message API</h4>
+			    <p>SMS API platform to send high volume of messages with a single API request.</p>
+                <span class="categories"><i class="fa fa-tag"></i>Microservices, NodeJS/Hapi, DynamoDB, Amazon AWS</span>
+		    </div>
+            <div class="link-box">
+		        <a class="popup-modal-dismiss button btn-close">Close</a>
+            </div>
+	      </div>
+		  
+		  <div id="modal-03" class="popup-modal mfp-hide">
+		    <div class="description-box">
+			    <h4>Votorantim Institute - Volunteers' Challenge 2016</h4>
+			    <p>Votorantim Institute is a Votorantim Group’s Company which promotes social activities and community development. Votorantim Group is one of the largest industrial conglomerates in Latin America.</p>
+                <span class="categories"><i class="fa fa-tag"></i>ASP.NET MVC, DynamoDB, Amazon AWS</span>
+		    </div>
+            <div class="link-box">
+		        <a class="popup-modal-dismiss button btn-close">Close</a>
+            </div>
+	      </div>
+		  
+		  <div id="modal-04" class="popup-modal mfp-hide">
+		    <div class="description-box">
+			    <h4>20hT - Courses for your IT career</h4>
+			    <p>Educational company which offers IT training courses. I'm the founder, teacher and technical reviewer of the academic materials.</p>
+                <span class="categories"><i class="fa fa-tag"></i>PHP, MySQL, Amazon AWS</span>
+		    </div>
+            <div class="link-box">
+		        <a class="popup-modal-dismiss button btn-close">Close</a>
+            </div>
+	      </div>
+
+         <div id="modal-05" class="popup-modal mfp-hide">
+		    <div class="description-box">
+			    <h4>First Idiomas - Online Services</h4>
+			    <p>First Idiomas is a language school that offers an on-line experience to their students where they can download the materials, homework and check personal informations.</p>
+                <span class="categories"><i class="fa fa-tag"></i>ASP.NET MVC, MySQL, Amazon AWS</span>
+		    </div>
+            <div class="link-box">
+		        <a class="popup-modal-dismiss button btn-close">Close</a>
+            </div>
+	      </div>
+
+         <div id="modal-06" class="popup-modal mfp-hide">
+		    <div class="description-box">
+			     <h4>Redsocial - Track your social media activities</h4>
+			     <p>It's a tool for measuring and monitoring social media activities.</p>
+				 <span class="categories"><i class="fa fa-tag"></i> Apache Flex, JavaEE (Spring, Hibernate), MySQL, Amazon AWS.</span>
+		    </div>
+            <div class="link-box">
+		         <a class="popup-modal-dismiss button btn-close">Close</a>
+            </div>
+	     </div>
+
+      </div> <!-- row End -->
+
+   </section> <!-- Portfolio Section End-->
+
+
+   <!-- Call-To-Action Section
+   ================================================== -->
+   <section id="call-to-action">
+      <div class="row">
+         <div class="two columns header-col">
+            <h1 class="wow fadeInLeft">
+              <span><i class="fa fa-paper-plane fa-5x pull-left fa-fw"></i></span>
+            </h1>
+         </div>
+         <div class="seven columns">            
+			{{__('Drop me a line')}}
+         </div>
+         <div class="three columns action wow fadeIn">
+            <a href="mailto:pablodss@gmail.com" class="button">{{__('Contact me')}}</a>
+         </div>
+      </div>
+   </section> <!-- Call-To-Action Section End-->
+   
+{% endblock %}   
