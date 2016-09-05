@@ -96,170 +96,38 @@
 
             <!-- portfolio-wrapper -->
             <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf wow fadeIn">
+            
+              {% for item in projects %}
 
-          	   <div class="columns portfolio-item">
-					<div class="item-wrap">
-						<a href="#modal-01" title="">
-							<img alt="" src="/images/photo-portal-sorocred.jpg">
-							<div class="overlay">
-							   <div class="portfolio-item-meta">
-									<h5>Sorocred</h5>
-									<p>Financial services</p>
-								</div>
-							</div>
-							<div class="link-icon"><i class="fa fa-plus fa-2x"></i></div>
-						</a>
-					</div>
-          		</div>
-				
-				<div class="columns portfolio-item">
-                  <div class="item-wrap">
-                     <a href="#modal-02" title="">
-                        <img alt="" src="/images/photo-sendia.jpg">
-						<div class="overlay">
-						   <div class="portfolio-item-meta">
-								<h5>Sendia</h5>
-								<p>Text Message API</p>
-							</div>
-						</div>
-						<div class="link-icon"><i class="fa fa-plus fa-2x"></i></div>
-                     </a>
-                  </div>
-          		</div>
-				
-				<div class="columns portfolio-item">
-                  <div class="item-wrap">
-                     <a href="#modal-03" title="">
-                        <img alt="" src="/images/photo-desafio-votorantim.jpg">
-						<div class="overlay">
-						   <div class="portfolio-item-meta">
-								<h5>Votorantim Institute</h5>
-								<p>Volunteers' Challenge 2016</p>
-							</div>
-						</div>
-						<div class="link-icon"><i class="fa fa-plus fa-2x"></i></div>
-                     </a>
-                  </div>
-          		</div>
-				
-				<div class="columns portfolio-item">
-                  <div class="item-wrap">
-                     <a href="#modal-04" title="">
-                        <img alt="" src="/images/photo-20ht.jpg">
-						<div class="overlay">
-						   <div class="portfolio-item-meta">
-								<h5>20hT</h5>
-								<p>Courses for your IT career</p>
-							</div>
-						</div>
-						<div class="link-icon"><i class="fa fa-plus fa-2x"></i></div>
-                     </a>
-                  </div>
-          		</div>
+                 <div class="columns portfolio-item">
+		      <div class="item-wrap">
+                           <a href="#modal-{{ item.id }}" title="">
+                              <img alt="" src="{{ item.thumb }}" />
+                              <div class="overlay">
+                                   <div class="portfolio-item-meta">
+                                        <h5>{{ item.title.short }}</h5>
+                                        <p>{{ item.description.short }}</p>
+                                   </div>
+                              </div>
+                              <div class="link-icon"><i class="fa fa-plus fa-2x"></i></div>
+                           </a>
+                      </div>
+                 </div>
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-                     <a href="#modal-05" title="">
-                        <img alt="" src="/images/photo-firstidiomas.png">
-						<div class="overlay">
-						   <div class="portfolio-item-meta">
-								<h5>First Idiomas</h5>
-								<p>Online Services</p>
-							</div>
-						</div>
-						<div class="link-icon"><i class="fa fa-plus fa-2x"></i></div>
-                     </a>
-                  </div>
-          		</div>
+                 <div id="modal-{{ item.id }}" class="popup-modal mfp-hide">
+                      <div class="description-box">
+                           <h4>{{ item.title.full }}</h4>
+                           <p>{{ item.description.full }}</p>
+                           <span class="categories"><i class="fa fa-tag"></i>{{ item.tags }}</span>
+                      </div>
+                      <div class="link-box"><a class="popup-modal-dismiss button btn-close">Close</a></div>
+                 </div>
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-                     <a href="#modal-06" title="">
-                        <img alt="" src="/images/photo-redsocial.png">
-						<div class="overlay">
-						   <div class="portfolio-item-meta">
-								<h5>Redsocial</h5>
-								<p>Track your social media activities</p>
-							</div>
-						</div>
-						<div class="link-icon"><i class="fa fa-plus fa-2x"></i></div>
-                     </a>
-                  </div>
-          		</div>
+              {% endfor %}
 
             </div> <!-- portfolio-wrapper end -->
 
          </div> <!-- twelve columns end -->
-
-
-         <!-- Modal Popup
-	      =============================================== -->
-
-         <div id="modal-01" class="popup-modal mfp-hide">		    
-		    <div class="description-box">
-			    <h4>Sorocred - Financial Services</h4>
-			    <p>Sorocred is a financial company that provides through its Portal, online services to their customers.</p>
-                <span class="categories"><i class="fa fa-tag"></i>Microservices, NodeJS, ASP.NET MVC/WEB API, Oracle, DynamoDB, Amazon AWS</span>
-		    </div>
-            <div class="link-box">
-		        <a class="popup-modal-dismiss button btn-close">Close</a>
-            </div>
-	      </div>
-		  
-		  <div id="modal-02" class="popup-modal mfp-hide">		    
-		    <div class="description-box">
-			    <h4>Sendia - Text Message API</h4>
-			    <p>SMS API platform to send high volume of messages with a single API request.</p>
-                <span class="categories"><i class="fa fa-tag"></i>Microservices, NodeJS/Hapi, DynamoDB, Amazon AWS</span>
-		    </div>
-            <div class="link-box">
-		        <a class="popup-modal-dismiss button btn-close">Close</a>
-            </div>
-	      </div>
-		  
-		  <div id="modal-03" class="popup-modal mfp-hide">
-		    <div class="description-box">
-			    <h4>Votorantim Institute - Volunteers' Challenge 2016</h4>
-			    <p>Votorantim Institute is a Votorantim Group’s Company which promotes social activities and community development. Votorantim Group is one of the largest industrial conglomerates in Latin America.</p>
-                <span class="categories"><i class="fa fa-tag"></i>ASP.NET MVC, DynamoDB, Amazon AWS</span>
-		    </div>
-            <div class="link-box">
-		        <a class="popup-modal-dismiss button btn-close">Close</a>
-            </div>
-	      </div>
-		  
-		  <div id="modal-04" class="popup-modal mfp-hide">
-		    <div class="description-box">
-			    <h4>20hT - Courses for your IT career</h4>
-			    <p>Educational company which offers IT training courses. I'm the founder, teacher and technical reviewer of the academic materials.</p>
-                <span class="categories"><i class="fa fa-tag"></i>PHP, MySQL, Amazon AWS</span>
-		    </div>
-            <div class="link-box">
-		        <a class="popup-modal-dismiss button btn-close">Close</a>
-            </div>
-	      </div>
-
-         <div id="modal-05" class="popup-modal mfp-hide">
-		    <div class="description-box">
-			    <h4>First Idiomas - Online Services</h4>
-			    <p>First Idiomas is a language school that offers an on-line experience to their students where they can download the materials, homework and check personal informations.</p>
-                <span class="categories"><i class="fa fa-tag"></i>ASP.NET MVC, MySQL, Amazon AWS</span>
-		    </div>
-            <div class="link-box">
-		        <a class="popup-modal-dismiss button btn-close">Close</a>
-            </div>
-	      </div>
-
-         <div id="modal-06" class="popup-modal mfp-hide">
-		    <div class="description-box">
-			     <h4>Redsocial - Track your social media activities</h4>
-			     <p>It's a tool for measuring and monitoring social media activities.</p>
-				 <span class="categories"><i class="fa fa-tag"></i> Apache Flex, JavaEE (Spring, Hibernate), MySQL, Amazon AWS.</span>
-		    </div>
-            <div class="link-box">
-		         <a class="popup-modal-dismiss button btn-close">Close</a>
-            </div>
-	     </div>
 
       </div> <!-- row End -->
 

@@ -1,0 +1,86 @@
+[
+ {
+  "id": "1",
+  "title": {
+    "short": "Sorocred",
+    "full": "Sorocred - Financial Services"
+  },
+  "description": {
+    "short": "Financial Services",
+    "full": "Sorocred is a financial company that provides through its Portal, online services to their customers."
+  },
+  "tags": "Microservices, NodeJS/Express, ASP.NET MVC/WEB API, Bootstrap 3, Oracle, DynamoDB, Amazon AWS",
+  "thumb": "/images/photo-portal-sorocred.jpg",
+  "url": ""
+ },
+ {
+  "id": "2",
+  "title": {
+    "short": "Sendia",
+    "full": "Sendia - Text Message API"
+  },
+  "description": {
+    "short": "Text Message API",
+    "full": "SMS API platform to send high volume of messages with a single API request."
+  },
+  "tags": "Microservices, NodeJS/Express, MongoDB, PHP, Amazon AWS",
+  "thumb": "/images/photo-sendia.jpg",
+  "url": ""
+ },
+ {
+  "id": "3",
+  "title": {
+    "short": "Votorantim Institute",
+    "full": "Votorantim Institute - Volunteers' Challenge 2016"
+  },
+  "description": {
+    "short": "Volunteers' Challenge 2016",
+    "full": "Votorantim Institute is a Votorantim Group’s Company which promotes social activities and community development. Votorantim Group is one of the largest industrial conglomerates in Latin America."
+  },
+  "tags": "ASP.NET MVC, Bootstrap 3, DynamoDB, Amazon AWS",
+  "thumb": "/images/photo-desafio-votorantim.jpg",
+  "url": ""
+ },
+ {
+  "id": "4",
+  "title": {
+    "short": "20hT",
+    "full": "20hT - Courses for your IT career"
+  },
+  "description": {
+    "short": "Courses for your IT career",
+    "full": "Educational company which offers IT training courses. I'm the founder, teacher and technical reviewer of the academic materials."
+  },
+  "tags": "PHP, Bootstrap 3, MySQL, Amazon AWS",
+  "thumb": "/images/photo-20ht.jpg",
+  "url": ""
+ },
+ {
+  "id": "5",
+  "title": {
+    "short": "First Idiomas",
+    "full": "First Idiomas - Online Services"
+  },
+  "description": {
+    "short": "Online Services to Students",
+    "full": "First Idiomas is a language school that offers an on-line experience to their students where they can download the materials, homework and check personal informations."
+  },
+  "tags": "ASP.NET MVC, Bootstrap 3, MySQL, Amazon AWS",
+  "thumb": "/images/photo-firstidiomas.png",
+  "url": ""
+ },
+ {
+  "id": "6",
+  "title": {
+    "short": "Redsocial",
+    "full": "Redsocial - Track your social media activities"
+  },
+  "description": {
+    "short": "Track your social media activities",
+    "full": "It's a tool for measuring, monitoring and interact with social media activities."
+  },
+  "tags": "Apache Flex, JavaEE (Spring, Hibernate), MySQL, Amazon AWS.",
+  "thumb": "/images/photo-redsocial.png",
+  "url": ""
+ }
+] 

@@ -31,7 +31,6 @@ $ aws elasticbeanstalk delete-application-version --application-name "{your-ebs-
 $ aws s3 cp ZIP_NAME.zip s3://{your-s3-bucket-name}/ZIP_NAME-$version.zip
 $ aws elasticbeanstalk create-application-version --application-name "{your-ebs-app-name}" --version-label $version --source-bundle S3Bucket="{your-s3-bucket-name}",S3Key="ZIP_NAME-$version.zip"
 $ aws elasticbeanstalk update-environment --environment-name "{your-ebs-env-name}" --version-label $version
-```
 
 ## Credits
 Credit goes to all of the open source code that people have made available.

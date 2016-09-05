@@ -7,10 +7,12 @@ exports.register = function(server, options, next){
             path: '/{languageCode?}',
             config: {
                 handler: function(request, reply){
+                    var projects = require('./projects.json')
                     var locale = request.params.languageCode ? encodeURIComponent(request.params.languageCode) : 'en';
-					request.i18n.setLocale(reply, locale, true);					
-					reply.view('index', {
-                        title: request.i18n.__( "Home Title" )
+                    request.i18n.setLocale(reply, locale, true);
+                    reply.view('index', {
+                        title: request.i18n.__( 'Home Title' ),
+                        projects: projects
                     });
                 },
                 id: 'index'
