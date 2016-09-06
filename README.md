@@ -4,8 +4,8 @@ Pablo Souza - Personal Website
 ## Installation
 
 ```bash
-$ git clone https://github.com/rectius/pablosouza.rectuis.com.br.git
-$ cd pablosouza.rectuis.com.br
+$ git clone https://github.com/rectius/pablosouza.rectius.com.br.git
+$ cd pablosouza.rectius.com.br
 $ npm install -g bower
 $ npm install -g gulp
 $ npm install -g supervisor
