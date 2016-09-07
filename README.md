@@ -18,13 +18,13 @@ $ npm install
 $ npm start
 ```
 
-## Compile & Deploy
+## Compile
 
 ```bash
 $ gulp
 ```
 
-## Deploy to Amazon AWS
+## Manual Deploy to Amazon Elastic Beanstalk
 
 ```bash
 $ $version = git rev-parse --short HEAD
