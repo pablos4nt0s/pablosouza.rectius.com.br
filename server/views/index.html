@@ -119,7 +119,12 @@
                            <p>{{ item.description.full }}</p>
                            <span class="categories"><i class="fa fa-tag"></i>{{ item.tags }}</span>
                       </div>
-                      <div class="link-box"><a class="popup-modal-dismiss button btn-close">Close</a></div>
+                      <div class="link-box">
+					    {% if item.url %}
+							<a href="{{ item.url }}" class="button" target="_blank">Live Demo</a>
+						{% endif %}
+						<a class="popup-modal-dismiss button btn-close">Close</a>
+					  </div>
                  </div>
 
               {% endfor %}
