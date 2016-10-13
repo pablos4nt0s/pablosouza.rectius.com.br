@@ -4,9 +4,9 @@
 
 {% block content %}
 
-<!-- Preloader --> 
+<!-- Preloader -->
     <div id="preloader">
-      <div class="loader"></div>    
+      <div class="loader"></div>
     </div><!--preloader end-->
 
    <!-- Header
@@ -20,7 +20,7 @@
             <li class="current"><a class="smoothscroll" href="#home">{{__('Home')}}</a></li>
             <li><a class="smoothscroll" href="#about">{{__('About me')}}</a></li>
             <li><a class="smoothscroll" href="#portfolio">{{__('Portfolio')}}</a></li>
-			<li><a class="smoothscroll" href="http://blog.rectius.com.br">{{__('Blog')}}</a></li>
+			<li><a href="http://blog.rectius.com.br" target="_blank">{{__('Blog')}}</a></li>
 			<li><a href="/pt-br"><img class="flag" src="/images/br.svg" /></a></li>
 			<li><a href="/en"><img class="flag" src="/images/us.svg" /></a></li>
          </ul> <!-- end #nav -->
@@ -43,10 +43,10 @@
    ================================================== -->
       <div id="social">
         <div class="row social-container">
-              <ul class="social">               
-		  	     <li><a href="https://github.com/rectius"><i class="fa fa-github"></i></a></li>               
-		  	     <li><a href="https://br.linkedin.com/in/pablosouzasantos"><i class="fa fa-linkedin"></i></a></li>               
-		  	     <li><a href="http://blog.rectius.com.br"><i class="fa fa-wordpress"></i></a></li>			   
+              <ul class="social">
+		  	     <li><a href="https://github.com/rectius"><i class="fa fa-github"></i></a></li>
+		  	     <li><a href="https://br.linkedin.com/in/pablosouzasantos"><i class="fa fa-linkedin"></i></a></li>
+		  	     <li><a href="http://blog.rectius.com.br"><i class="fa fa-wordpress"></i></a></li>
               </ul>
         </div>
       </div> <!-- Social End -->
@@ -58,24 +58,24 @@
    <section id="about">
       <div class="row bio-container">
         <div class="twelve columns bio-inner">
-         <div class="six columns bio-left"> 
+         <div class="six columns bio-left">
           <div class="pp-container">
 
             <img class="profile-pic wow zoomIn"  src="/images/profile.jpg" alt="" />
               <h2>Pablo Souza</h2>
-              <h3>Software Engineer</h3>              
+              <h3>Software Engineer</h3>
           </div>
          </div>
          <div class="six columns main-col wow fadeIn">
           <div class="arrow-left"></div>
 			{{__('About me block')}}
-          <div class="row">            
+          <div class="row">
             <div class="six columns download">
                 <p>
                   <a href="#contact" class="button"><i class="fa fa-paper-plane"></i>{{__('Hire me')}}</a>
                   <a href="{{path.resume}}" class="button" target="_blank"><i class="fa fa-download"></i>{{__('Download resume')}}</a>
                 </p>
-            </div> <!-- Download Buttons --> 
+            </div> <!-- Download Buttons -->
           </div>
          </div> <!-- end .main-col -->
         </div>
@@ -95,7 +95,7 @@
 
             <!-- portfolio-wrapper -->
             <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf wow fadeIn">
-            
+
               {% for item in projects %}
 
                  <div class="columns portfolio-item">
@@ -147,7 +147,7 @@
               <span><i class="fa fa-paper-plane fa-5x pull-left fa-fw"></i></span>
             </h1>
          </div>
-         <div class="seven columns">            
+         <div class="seven columns">
 			{{__('Drop me a line')}}
          </div>
          <div class="three columns action wow fadeIn">
@@ -155,5 +155,5 @@
          </div>
       </div>
    </section> <!-- Call-To-Action Section End-->
-   
+
 {% endblock %}
