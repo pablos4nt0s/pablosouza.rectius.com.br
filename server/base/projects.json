@@ -9,7 +9,7 @@
     "short": "Discover the perfect space for you next event",
     "full": "Mowspace helps you to find the perfect space for your next event."
   },
-  "tags": "NodeJS/Express, Bootstrap 3, MongoDB, Amazon Route 53, Amazon CloudFront, Amazon CloudSearch",
+  "tags": "NodeJS/Express, Bootstrap 3, MongoDB, Amazon Route 53, Amazon CloudFront/CDN, ElasticSearch/Lucene, NewRelic monitoring",
   "thumb": "/images/photo-mowspace.jpg",
   "url": "http://mowspace.com/"
  },
@@ -97,4 +97,4 @@
   "thumb": "/images/photo-redsocial.png",
   "url": ""
  }
-] 
+]
