@@ -15,8 +15,7 @@
     "node": ">=4.4.6"
   },
   "scripts": {
-    "start": "supervisor -e html,js server.js",
-    "postinstall": "bower install"
+    "start": "supervisor -e html,js server.js"
   },
   "dependencies": {
     "bower": "~1.3.9",

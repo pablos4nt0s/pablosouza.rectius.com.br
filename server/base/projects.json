@@ -1,18 +1,32 @@
 [
 {
-  "id": "7",
+  "id": "8",
   "title": {
-    "short": "Mowspace",
-    "full": "Mowspace - Discover the perfect space for your event"
+    "short": "NodeSchool Sorocaba",
+    "full": "NodeSchool Sorocaba"
   },
   "description": {
-    "short": "Discover the perfect space for you next event",
-    "full": "Mowspace helps you to find the perfect space for your next event."
+    "short": "Help you learn JavaScript.",
+    "full": "NodeSchool is a collection of workshops that help you learn JavaScript by writing code and solving challenges."
   },
-  "tags": "NodeJS/Express, Bootstrap 3, MongoDB, Amazon Route 53, Amazon CloudFront/CDN, ElasticSearch/Lucene, NewRelic monitoring",
-  "thumb": "/images/photo-mowspace.jpg",
-  "url": "http://mowspace.com/"
+  "tags": "Node.js",
+  "thumb": "/images/photo-nodeschool.jpg",
+  "url": "http://nodeschool.io/sorocaba"
  },
+ {
+   "id": "7",
+   "title": {
+     "short": "Mowspace",
+     "full": "Mowspace - Discover the perfect space for your event"
+   },
+   "description": {
+     "short": "Discover the perfect space for you next event",
+     "full": "Mowspace helps you to find the perfect space for your next event."
+   },
+   "tags": "Node.js/Express, Bootstrap 3, MongoDB, Amazon Route 53, Amazon CloudFront/CDN, ElasticSearch/Lucene, NewRelic monitoring",
+   "thumb": "/images/photo-mowspace.jpg",
+   "url": "http://mowspace.com/"
+  },
  {
   "id": "1",
   "title": {
@@ -23,7 +37,7 @@
     "short": "Financial Services",
     "full": "Sorocred is a financial company that provides through its Portal, online services to their customers."
   },
-  "tags": "Microservices, NodeJS/Express, ASP.NET MVC/WEB API, Bootstrap 3, Oracle, DynamoDB, Amazon AWS",
+  "tags": "Microservices, Node.js/Express, ASP.NET MVC/WEB API, Bootstrap 3, Oracle, DynamoDB, Amazon AWS",
   "thumb": "/images/photo-portal-sorocred.jpg",
   "url": "http://portal.sorocred.com.br/"
  },
@@ -37,7 +51,7 @@
     "short": "Text Message API",
     "full": "SMS API platform to send high volume of messages with a single API request."
   },
-  "tags": "Microservices, NodeJS/Express, MongoDB, PHP, Amazon AWS",
+  "tags": "Microservices, Node.js/Express, MongoDB, PHP, Amazon AWS",
   "thumb": "/images/photo-sendia.jpg",
   "url": "http://sendia.com.br/"
  },

@@ -1,7 +1,7 @@
 Pablo Souza - Personal Website
 ==============================
 
-It is the source code of my personal website that was developed using Node v4, Hapi framework and Bootstrap. 
+It is the source code of my personal website that was developed using Node v4, Hapi framework and Bootstrap.
 
 Gulp tasks were used to perform uglify and compress of css/js/image files.
 
@@ -12,7 +12,6 @@ It was deployed into cloud using Amazon Elastic Beanstalk and an Nginx proxy ser
 ```bash
 $ git clone https://github.com/rectius/pablosouza.rectius.com.br.git
 $ cd pablosouza.rectius.com.br
-$ npm install -g bower
 $ npm install -g gulp
 $ npm install -g supervisor
 $ npm install

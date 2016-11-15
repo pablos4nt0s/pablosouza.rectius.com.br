@@ -45,8 +45,8 @@ gulp.task('copy', function() {
 
   var server_locales = gulp.src('../server/locales/**/*')
 		.pipe(gulp.dest('../dist/server/locales/'));
-		
-  var server_config = gulp.src(['../.bowerrc', '../assets.js', '../bower.json', '../package.json', '../server.js'])
+
+  var server_config = gulp.src(['../assets.js', '../package.json', '../server.js'])
 		.pipe(gulp.dest('../dist/'));
 
   return merge(server_assets, server_base, server_locales, server_config);
