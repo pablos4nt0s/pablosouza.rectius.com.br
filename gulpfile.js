@@ -32,7 +32,7 @@ gulp.task('scripts', function() {
 gulp.task('styles', function() {
   return gulp.src(assets.development.css)
         .pipe(concat('bundle-styles.css'))
-        .pipe(minifycss())
+        .pipe(minifycss({processImport: false}))
         .pipe(gulp.dest('../dist/public/css/'));
 });
 
