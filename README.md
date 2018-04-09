@@ -1,7 +1,7 @@
 Pablo Souza - Personal Website
 ==============================
 
-It is the source code of my personal website that was developed using Node v4, Hapi framework and Bootstrap.
+It is the source code of my personal website that was developed using Node.js, Hapi framework and Bootstrap.
 
 Gulp tasks were used to perform uglify and compress of css/js/image files.
 
