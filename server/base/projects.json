@@ -1,15 +1,57 @@
 [
 {
+  "id": "11",
+  "title": {
+    "short": "Judicate",
+    "full": "Judicate - Social Networking for Lawyers"
+  },
+  "description": {
+    "short": "Social Networking for Lawyers",
+    "full": "Judicate is a lawyer-to-lawyer online social networking."
+  },
+  "tags": "Microservices, Node.js/Express, Bootstrap 3, MongoDB, Amazon Route 53, Amazon Elastic Beanstalk, Amazon CloudFront/CDN, ElasticSearch/Lucene, NewRelic monitoring",
+  "thumb": "/images/photo-judicate.jpg",
+  "url": "https://www.judicate.com.br"
+ },
+ {
+  "id": "10",
+  "title": {
+    "short": "Boleto Simples",
+    "full": "Boleto Simples - Financial Services"
+  },
+  "description": {
+    "short": "Financial Services",
+    "full": "Provides online services to Sorocred customers."
+  },
+  "tags": "Microservices, React, Node.js/Express, Amazon Route 53, Amazon Elastic Beanstalk, Amazon DynamoDB, Amazon CloudFront/CDN, Oracle, NewRelic monitoring",
+  "thumb": "/images/photo-boletosimples.jpg",
+  "url": "https://boletosimples.sorocred.com.br"
+ },
+ {
+  "id": "9",
+  "title": {
+    "short": "Burh",
+    "full": "Burh - Free job vacancies search"
+  },
+  "description": {
+    "short": "Free job vacancies search",
+    "full": "Find new oportunities for free."
+  },
+  "tags": "Microservices, Node.js/Express, PostgreSQL, Amazon Elastic Beanstalk",
+  "thumb": "/images/photo-burh.jpg",
+  "url": "https://www.burh.com.br"
+ },
+ {
   "id": "8",
   "title": {
     "short": "NodeSchool Sorocaba",
     "full": "NodeSchool Sorocaba"
   },
   "description": {
-    "short": "Help you learn JavaScript.",
+    "short": "Help you learn JavaScript",
     "full": "NodeSchool is a collection of workshops that help you learn JavaScript by writing code and solving challenges."
   },
-  "tags": "Node.js",
+  "tags": "Node.js, learning",
   "thumb": "/images/photo-nodeschool.jpg",
   "url": "http://nodeschool.io/sorocaba"
  },
