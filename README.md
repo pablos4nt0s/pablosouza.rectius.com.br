@@ -29,7 +29,7 @@ $ npm start
 $ gulp
 ```
 
-## Manual Deploy to Amazon Elastic Beanstalk
+## Script to automate deploy into Amazon Elastic Beanstalk
 
 ```bash
 $ $version = git rev-parse --short HEAD
