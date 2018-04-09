@@ -5,7 +5,7 @@ It is the source code of my personal website that was developed using Node.js, H
 
 Gulp tasks were used to perform uglify and compress of css/js/image files.
 
-It was deployed into cloud using Amazon Elastic Beanstalk and an Nginx proxy server.
+It was deployed into cloud using Amazon Lightsail.
 
 ## Installation
 
